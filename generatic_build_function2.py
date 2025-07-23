@@ -2,8 +2,9 @@
 Data = {'name':'Billy','age':39,'score':[89,47,61,50]}
 
 # Display all available operations or attributes that can be performed on this dictionary.
+print("\n===Dictionary Operations ===")
 operation_perform_data = Data.copy()
-print('\nCopy of the dictionary',operation_perform_data)
+print('Copy of the dictionary',operation_perform_data)
 print('All the values in the dictionary', operation_perform_data.values())
 key = operation_perform_data.keys()
 print('List containing the dictionary keys', key)
