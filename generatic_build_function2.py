@@ -49,7 +49,7 @@ string_con =[str(i) for i in float_num]
 print('Convert string: ',''.join(string_con))
 
 # Access the first three elements of the "scores" list using a manual iteration approach.
-scores_first_3 = Data['score'][:4]
+scores_first_3 = Data['score'][:3]
 scores_first_3 = iter(scores_first_3)
 try:
     while True:
