@@ -1,6 +1,7 @@
 # Ask the user to enter a series of numbers (comma-separated) as input.
 inp = input("Enter a series of numbers (comma-separated) as input: ")
 inp = inp.split(",")
+inp = [i for i in inp ]
 inp = [int(i) for i in inp if i!=" " and i!="," and i != ""]
 print(inp)
 input_list = inp.copy()
@@ -20,7 +21,8 @@ print('\nEven number: ',[i for i in less_ten_list if i%2 == 0])
 print('\nDivisible 5 list: ',[i for i in less_ten_list if i%5 == 0])
 
 # Display the highest number, the lowest number, and the total of the remaining list.
-if(not less_ten_list): print('\nRemaining list is empty \nSo max number, min number, sum, Ascending-descending not possible')
+if not less_ten_list: 
+    print('\nRemaining list is empty \nSo max number, min number, sum, Ascending-descending not possible')
 else:
     print('\nMax number = ',max(less_ten_list),'\nmin number = ',min(less_ten_list), '\nsum of total number = ',sum(less_ten_list))
 
